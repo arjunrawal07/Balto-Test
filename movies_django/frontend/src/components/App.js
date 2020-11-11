@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { render } from "react-dom";
+// import data from "movies_django/frontend/converted.json";
 
 class App extends Component {
   constructor(props) {
@@ -12,6 +13,7 @@ class App extends Component {
   }
 
   componentDidMount() {
+    //insert deployed API url
     fetch("")
       .then((response) => {
         if (response.status > 400) {
@@ -37,7 +39,13 @@ class App extends Component {
         {this.state.data.map((movie) => {
           return (
             <li key={movie.id}>
-              {contact.name} - {contact.email}
+              <li>{movie.year}</li>
+              <li>{movie.title}</li>
+              <li>{movie.origin}</li>
+              <li>{movie.director}</li>
+              <li>{movie.cast}</li>
+              <li>{movie.genre}</li>
+              <li>{movie.plot}</li>
             </li>
           );
         })}
