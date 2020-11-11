@@ -7,4 +7,5 @@ urlpatterns = [
     path('movies/<int:pk>',
          views.MovieDetail.as_view(),
          name='movie_detail'),
+         
 ]

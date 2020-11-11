@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'movies',
     'django_extensions',
     'rest_framework',
+    'frontend',
 ]
 
 MIDDLEWARE = [
@@ -69,6 +70,8 @@ TEMPLATES = [
         },
     },
 ]
+
+
 
 WSGI_APPLICATION = 'movies_django.wsgi.application'
 
