@@ -8,8 +8,9 @@ Create a full stack application with full CRUD capabality that uses React on the
 * Django REST
 * PostgreSQL
 
-## Quick Overview
+## Quick Overview on Data and Database Structure
 When building the backend, I chose to structure my model as close as possible to the source data provided in the `.csv` file to make the importing of data as smooth as possible. 
+The database in postgreSQL I created for this app uses column headings that directly correspond to the model below.
 ```python
 class Movie(models.Model):
     year = models.IntegerField()
@@ -81,3 +82,4 @@ As I continue to think about and work on this project, I'd like to take some mor
 - [PostgreSQL Documentation on COPY](https://www.postgresql.org/docs/current/sql-copy.html)
 - [Import a CSV file into a table using COPY statement](https://www.postgresqltutorial.com/import-csv-file-into-posgresql-table/)
 - [Using COPY in Postgres for Importing Large CSVs](https://www.trineo.com/blog/2018/08/using-copy-in-postgres-for-importing-large-csvs)
+- [React App with Django](https://www.valentinog.com/blog/drf/)
