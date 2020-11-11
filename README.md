@@ -56,7 +56,7 @@ After checking for unexpected content, special characters, spacing, or other syn
 My second approach to solving this issue was converting the `.csv` to `.json`. I've worked with JSON objects multiple times in the past, and after some cursory researching online, it seemed like a viable and easy-to-implement solution.
 My implementation was somewhat similar to my first approach, but with one major difference. Conceptually, I would drop the contents of the `.json` file into a temporary table, then take the data from the temporary table and copy it into the table where I want to ultimately store the data.
 
-1. Convert `.csv` to `.json` using npm's converter [linked here] (https://www.npmjs.com/package/convert-csv-to-json)
+1. Convert `.csv` to `.json` using npm's converter [linked here](https://www.npmjs.com/package/convert-csv-to-json)
 2. Drop JSON data into a temporary table
 ```
 CREATE TEMP TABLE stored_movies (info json);
